@@ -16,7 +16,7 @@ public class video {
      * 将手机里网易云音乐目录下的缓冲文件(以.uc!结尾)放到一个自定义目录下
      * 2019/06/03
      */
-    public void wyCould(){
+    public void wyCould() {
         String filepath = "D:\\music";
         File file = new File(filepath);
         File[] fileList = file.listFiles();
@@ -26,13 +26,13 @@ public class video {
                 lists.add(fileList[i]);
             }
         }
-        Integer n=1;
+        Integer n = 1;
         for (File file1 : lists) {
-            String fileName=file1.getName();
-            if (fileName.endsWith("uc!")){
-                String name=String.valueOf(n);
+            String fileName = file1.getName();
+            if (fileName.endsWith("uc!")) {
+                String name = String.valueOf(n);
                 try {
-                    File outFile = new File("D:\\music\\"+name+".mp3");
+                    File outFile = new File("D:\\music\\" + name + ".mp3");
                     DataInputStream dis = new DataInputStream(new FileInputStream(file1));
                     DataOutputStream dos = new DataOutputStream(new FileOutputStream(outFile));
                     byte[] by = new byte[1000];
