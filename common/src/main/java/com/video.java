@@ -17,6 +17,7 @@ public class video {
      * 2019/06/03
      */
     public void wyCould() {
+        //测试
         String filepath = "D:\\music";
         File file = new File(filepath);
         File[] fileList = file.listFiles();
