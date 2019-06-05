@@ -14,6 +14,7 @@ public class video {
      * 网易云音乐缓冲文件解码
      * .uc!转为MP3
      * 将手机里网易云音乐目录下的缓冲文件(以.uc!结尾)放到一个自定义目录下 此处为D盘music
+     * 直接使用时直接使用main方法调用此方法
      * 2019/06/03
      */
     public void wyCould() {
