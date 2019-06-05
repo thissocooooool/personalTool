@@ -28,6 +28,7 @@ public class video {
                 lists.add(fileList[i]);
             }
         }
+        //n为文件名
         Integer n = 1;
         for (File file1 : lists) {
             String fileName = file1.getName();
